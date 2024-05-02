@@ -1,8 +1,12 @@
 /* /src/components/App */
 /* Appointment card */
-
+.appointments-container h1{
+	text-align: center;
+}
 .appointment-cards{
 	display: flex;
+	padding: 10px;
+	flex-wrap: wrap;
 }
 .appointment-card {
 	border: 1px solid #ddd;
@@ -39,24 +43,35 @@
 		transition: background-color 0.3s ease;
 
 		&:hover {
-			background-color: #002e5f;
+			background-color: #f70c00;
 		}
 	}
 }
-/* Add this to a new CSS file, e.g., AppointmentForm.css */
+
+
+
 .appointment-form {
-	max-width: 400px;
-	margin: 0 auto;
-	padding: 20px;
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 5%;
+    left: 30%;
 }
+
+.appointment-list {
+    display: flex;
+	align-items: start;
+}
+
 
 .appointment-form h4 {
 	font-size: 24px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 
 .appointment-form label {
@@ -72,6 +87,14 @@
 	border-radius: 4px;
 }
 
+.appointment-form select{
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+  }
+  
 .appointment-form button {
 	background-color: #007bff;
 	color: #fff;
@@ -102,3 +125,42 @@
 	align-items: center;
 	margin-bottom: 250px;
 }
+  
+.editformBtns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row{
+	justify-content: space-evenly !important;
+}
+
+
+@media (max-width: 1024) {
+	.appointment-cards {
+       
+		justify-content: center;
+
+    }
+	.appointment-list {
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+
+
+}
+@media (max-width: 768px) {
+  
+	.appointment-list {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+
+
+}
+
+
+

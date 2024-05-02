@@ -5,7 +5,7 @@
    .departments-container {
     margin: 30px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
 }
   
@@ -27,5 +27,17 @@
     margin-bottom: 0;
   }
   
-  /* Add more styles as needed */
+
   
+@media (max-width: 768px) {
+  .department-card  {
+    max-width: 30%;
+   
+}
+}
+@media (max-width: 484px) {
+  .department-card  {
+      max-width: 50%;
+     
+  }
+}

@@ -35,7 +35,6 @@ const Footer = () => {
                 <i class="ri-twitter-x-line" id="socailMedialIcons"></i>
               </li>
             </ul>
-           
           </div>
 
           <div className="footer-section" id="footer-sec-links">

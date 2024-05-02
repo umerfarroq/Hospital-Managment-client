@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./styles/NavbarStyles/Navbar.css";
+import "./styles/Navbar.css";
+// import logo from "./assets/images/logo.png";
 
 const Navbar = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -35,11 +36,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">
-          <Link to="/">
-            <img src="/path/to/your/logo.png" alt="Logo" />
-          </Link>
-        </div>
+        <Link to="/">
+          {/* <img src={logo} alt="Logo" /> */}
+          <div className="logo"></div>
+        </Link>
+
         <div className={toggle ? `nav-links-mobile` : `nav-links`}>
           <ul>
             <li>
